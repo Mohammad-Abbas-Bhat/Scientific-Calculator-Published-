@@ -1,32 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Scientific Calculator</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Scientific Calculator</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#eef3f8;
+    color:#333;
+}
+
+header{
+
+    background:#1565C0;
+    color:white;
+    padding:60px 20px;
+    text-align:center;
+}
+
+header h1{
+
+    font-size:48px;
+    margin:0;
+}
+
+header p{
+
+    font-size:22px;
+    margin-top:15px;
+}
+
+.container{
+
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+.card{
+
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+h2{
+
+    color:#1565C0;
+}
+
+.features{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:18px;
+    margin-top:25px;
+}
+
+.feature{
+
+    background:#f8fbff;
+    border-left:5px solid #1565C0;
+    padding:18px;
+    border-radius:8px;
+}
+
+.feature h3{
+
+    margin-top:0;
+    color:#1565C0;
+}
+
+.buttons{
+
+    display:flex;
+    gap:20px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:35px;
+}
+
+.button{
+
+    text-decoration:none;
+    background:#1565C0;
+    color:white;
+    padding:15px 30px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+
+    background:#0D47A1;
+}
+
+.notice{
+
+    background:#FFF8E1;
+    border-left:5px solid #FFC107;
+    padding:20px;
+    border-radius:8px;
+    margin-top:20px;
+}
+
+footer{
+
+    background:#1565C0;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+</style>
+
 </head>
+
 <body>
-    <h1>Scientific Calculator</h1>
 
-    <p>A powerful scientific and matrix calculator designed for students, engineers, and professionals.</p>
+<header>
 
-    <h2>Features</h2>
-    <ul>
-        <li>Scientific functions</li>
-        <li>Degree and Radian modes</li>
-        <li>Matrix calculations with MatA, MatB, and MatC</li>
-        <li>Determinant, inverse, transpose, rank, and other matrix operations</li>
-        <li>Editable expressions with cursor support</li>
-        <li>Works completely offline</li>
-    </ul>
-<h2>Privacy</h2>
+<h1>Scientific Calculator</h1>
+
+<p>Advanced Scientific & Matrix Calculator</p>
+
+</header>
+
+<div class="container">
+
+<div class="card">
+
+<h2>About</h2>
 
 <p>
-Scientific Calculator uses Google AdMob to display advertisements.
-For information about how data is handled, please read our
-<a href="privacy-policy.html">Privacy Policy</a>.
+
+Scientific Calculator is a powerful offline calculator designed for students,
+teachers, engineers and professionals.
+
+It combines advanced scientific calculations with professional matrix operations
+in a fast, clean and intuitive interface.
+
 </p>
-   
-    <p><a href="terms.html">Terms & Conditions</a></p>
-    <p><a href="support.html">Support</a></p>
+
+</div>
+
+<div class="card">
+
+<h2>Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Scientific Functions</h3>
+Trigonometric, logarithmic, exponential, powers, roots and advanced calculations.
+</div>
+
+<div class="feature">
+<h3>Degree & Radian</h3>
+Instant switching between DEG and RAD modes.
+</div>
+
+<div class="feature">
+<h3>Advanced Matrix Mode</h3>
+Matrix memory using MatA, MatB and MatC.
+</div>
+
+<div class="feature">
+<h3>Matrix Operations</h3>
+Addition, subtraction, multiplication, determinant, inverse, transpose and rank.
+</div>
+
+<div class="feature">
+<h3>Editable Expressions</h3>
+Move the cursor anywhere to quickly correct mistakes.
+</div>
+
+<div class="feature">
+<h3>Offline</h3>
+No internet connection or account required.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Privacy</h2>
+
+<div class="notice">
+
+This application uses <strong>Google AdMob</strong> to display advertisements.
+
+For complete information about how data is handled, please read our Privacy Policy.
+
+</div>
+
+<div class="buttons">
+
+<a class="button" href="privacy-policy.html">Privacy Policy</a>
+
+<a class="button" href="terms.html">Terms & Conditions</a>
+
+<a class="button" href="support.html">Support</a>
+
+</div>
+
+</div>
+
+</div>
+
+<footer>
+
+© 2026 Scientific Calculator<br>
+
+Developed by Mohammad Abbas Bhat
+
+</footer>
+
 </body>
+
 </html>
