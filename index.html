@@ -1,10 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Scientific Calculator is an advanced calculator with scientific, matrix, statistics, equation, table, graphing and Base-N modes."
+
+>
 
 <title>Scientific Calculator</title>
 
@@ -15,6 +22,7 @@ body{
     font-family:Arial,Helvetica,sans-serif;
     background:#eef3f8;
     color:#333;
+    line-height:1.6;
 }
 
 header{
@@ -77,6 +85,7 @@ h2{
 .feature h3{
 
     margin-top:0;
+    margin-bottom:8px;
     color:#1565C0;
 }
 
@@ -100,7 +109,8 @@ h2{
     transition:.3s;
 }
 
-.button:hover{
+.button:hover,
+.button:focus{
 
     background:#0D47A1;
 }
@@ -123,6 +133,41 @@ footer{
     margin-top:50px;
 }
 
+@media(max-width:600px){
+
+    header{
+
+        padding:45px 20px;
+    }
+
+    header h1{
+
+        font-size:36px;
+    }
+
+    header p{
+
+        font-size:18px;
+    }
+
+    .container{
+
+        padding:25px 15px;
+    }
+
+    .card{
+
+        padding:22px;
+    }
+
+    .button{
+
+        width:100%;
+        text-align:center;
+        box-sizing:border-box;
+    }
+}
+
 </style>
 
 </head>
@@ -133,11 +178,11 @@ footer{
 
 <h1>Scientific Calculator</h1>
 
-<p>Advanced Scientific & Matrix Calculator</p>
+<p>Advanced Scientific, Matrix, Graphing & Engineering Calculator</p>
 
 </header>
 
-<div class="container">
+<main class="container">
 
 <div class="card">
 
@@ -145,11 +190,16 @@ footer{
 
 <p>
 
-Scientific Calculator is a powerful offline calculator designed for students,
-teachers, engineers and professionals.
+Scientific Calculator is a powerful calculator designed for students, teachers,
+engineers, researchers and professionals.
 
-It combines advanced scientific calculations with professional matrix operations
-in a fast, clean and intuitive interface.
+</p>
+
+<p>
+
+It combines standard arithmetic, advanced scientific calculations, calculus,
+matrix operations, statistics, equation solving, function tables, graph plotting
+and number-base calculations in a fast, clean and intuitive interface.
 
 </p>
 
@@ -157,38 +207,358 @@ in a fast, clean and intuitive interface.
 
 <div class="card">
 
-<h2>Features</h2>
+<h2>Calculator Modes</h2>
 
 <div class="features">
 
 <div class="feature">
-<h3>Scientific Functions</h3>
-Trigonometric, logarithmic, exponential, powers, roots and advanced calculations.
+<h3>Standard Mode</h3>
+Perform everyday arithmetic calculations using addition, subtraction,
+multiplication, division, percentages, powers, roots and parentheses.
 </div>
 
 <div class="feature">
-<h3>Degree & Radian</h3>
-Instant switching between DEG and RAD modes.
+<h3>Scientific Mode</h3>
+Access advanced mathematical functions for scientific, engineering and
+academic calculations.
 </div>
 
 <div class="feature">
-<h3>Advanced Matrix Mode</h3>
-Matrix memory using MatA, MatB and MatC.
+<h3>Matrix Mode</h3>
+Create, edit, store and calculate with matrices using dedicated matrix tools.
 </div>
 
 <div class="feature">
-<h3>Matrix Operations</h3>
-Addition, subtraction, multiplication, determinant, inverse, transpose and rank.
+<h3>Statistics Mode</h3>
+Enter statistical datasets and perform common statistical calculations and
+data analysis.
 </div>
+
+<div class="feature">
+<h3>Table Mode</h3>
+Generate a table of function values over a selected numerical range.
+</div>
+
+<div class="feature">
+<h3>Equation Mode</h3>
+Solve supported mathematical equations through a dedicated equation-solving
+interface.
+</div>
+
+<div class="feature">
+<h3>Graph Mode</h3>
+Plot mathematical functions with configurable graph bounds, titles and axis
+labels.
+</div>
+
+<div class="feature">
+<h3>Base-N Mode</h3>
+Work with binary, octal, decimal and hexadecimal number systems.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Scientific Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Trigonometric Functions</h3>
+Calculate sine, cosine, tangent and their inverse functions.
+</div>
+
+<div class="feature">
+<h3>Hyperbolic Functions</h3>
+Use hyperbolic sine, cosine and tangent together with supported inverse
+hyperbolic functions.
+</div>
+
+<div class="feature">
+<h3>Degree & Radian Modes</h3>
+Instantly switch between DEG and RAD angle modes using a clear on-screen
+mode indicator.
+</div>
+
+<div class="feature">
+<h3>Inverse & Hyperbolic Controls</h3>
+Use dedicated INV and HYP states with visible indicators showing which
+function mode is active.
+</div>
+
+<div class="feature">
+<h3>Logarithms & Exponentials</h3>
+Evaluate common logarithms, natural logarithms, exponentials and scientific
+powers.
+</div>
+
+<div class="feature">
+<h3>Powers & Roots</h3>
+Calculate squares, general powers, square roots and other supported root
+expressions.
+</div>
+
+<div class="feature">
+<h3>Scientific Notation</h3>
+Enter and evaluate very large or very small values using scientific notation.
+</div>
+
+<div class="feature">
+<h3>Mathematical Constants</h3>
+Quickly use supported mathematical constants such as π and e in expressions.
+</div>
+
+<div class="feature">
+<h3>Factorials</h3>
+Calculate factorial expressions with domain and overflow validation.
+</div>
+
+<div class="feature">
+<h3>Permutations & Combinations</h3>
+Evaluate nPr and nCr expressions with input validation for supported integer
+values.
+</div>
+
+<div class="feature">
+<h3>Modulo Calculations</h3>
+Use the percent symbol as the modulo operator in supported arithmetic
+expressions.
+</div>
+
+<div class="feature">
+<h3>Implicit Multiplication</h3>
+Evaluate supported expressions where multiplication is understood between
+adjacent values, functions or grouped expressions.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Calculus Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Differentiation</h3>
+Calculate supported symbolic derivatives of mathematical expressions.
+</div>
+
+<div class="feature">
+<h3>Integration</h3>
+Calculate supported indefinite integrals and display the resulting
+mathematical expression.
+</div>
+
+<div class="feature">
+<h3>Function Operations</h3>
+Work with supported function addition, subtraction and composition operations.
+</div>
+
+<div class="feature">
+<h3>Readable Mathematical Output</h3>
+View formatted mathematical expressions, including fractions, powers, roots,
+derivatives and integrals.
+</div>
+
+<div class="feature">
+<h3>Scrollable Long Results</h3>
+Move through long expressions and calculation results without losing important
+parts of the output.
+</div>
+
+<div class="feature">
+<h3>Input Validation</h3>
+Receive clear feedback for unsupported domains, invalid expressions and
+calculation errors.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Matrix Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Matrix Memory</h3>
+Create and reuse matrices stored as MatA, MatB and MatC.
+</div>
+
+<div class="feature">
+<h3>Matrix Addition</h3>
+Add compatible matrices using standard matrix arithmetic.
+</div>
+
+<div class="feature">
+<h3>Matrix Subtraction</h3>
+Subtract compatible matrices directly from the matrix workspace.
+</div>
+
+<div class="feature">
+<h3>Matrix Multiplication</h3>
+Multiply matrices when their dimensions satisfy the required compatibility
+rules.
+</div>
+
+<div class="feature">
+<h3>Scalar Multiplication</h3>
+Multiply a matrix by positive or negative scalar values.
+</div>
+
+<div class="feature">
+<h3>Determinant</h3>
+Calculate the determinant of supported square matrices.
+</div>
+
+<div class="feature">
+<h3>Matrix Inverse</h3>
+Calculate the inverse of supported non-singular square matrices.
+</div>
+
+<div class="feature">
+<h3>Transpose</h3>
+Interchange matrix rows and columns using the transpose operation.
+</div>
+
+<div class="feature">
+<h3>Matrix Rank</h3>
+Determine the rank of supported matrices.
+</div>
+
+<div class="feature">
+<h3>Editable Matrix Cells</h3>
+Enter and correct positive values, negative values and decimal values directly
+inside matrix cells.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Graphing & Table Features</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Function Plotting</h3>
+Plot supported mathematical functions over a user-selected range.
+</div>
+
+<div class="feature">
+<h3>Custom Graph Bounds</h3>
+Configure minimum and maximum values for the graph axes.
+</div>
+
+<div class="feature">
+<h3>Graph Validation</h3>
+Invalid graph ranges or expressions are detected before graph settings are
+accepted.
+</div>
+
+<div class="feature">
+<h3>Discontinuity Handling</h3>
+Supported discontinuous functions are drawn without incorrectly connecting
+separate graph branches across asymptotes.
+</div>
+
+<div class="feature">
+<h3>Custom Graph Labels</h3>
+Add a graph title together with custom x-axis and y-axis labels.
+</div>
+
+<div class="feature">
+<h3>Mathematical Label Formatting</h3>
+Use supported mathematical notation in graph labels, including Greek symbols,
+subscripts, superscripts, fractions and square roots.
+</div>
+
+<div class="feature">
+<h3>Function Tables</h3>
+Generate numerical values for a function across a selected starting value,
+ending value and interval.
+</div>
+
+<div class="feature">
+<h3>Editable Table Settings</h3>
+Adjust the function expression and numerical table range before generating
+results.
+</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>Usability Features</h2>
+
+<div class="features">
 
 <div class="feature">
 <h3>Editable Expressions</h3>
-Move the cursor anywhere to quickly correct mistakes.
+Move the cursor within an expression to correct or extend calculations without
+re-entering the entire expression.
 </div>
 
 <div class="feature">
-<h3>Offline</h3>
-No internet connection or account required.
+<h3>Calculation History</h3>
+Review previous expressions and results through the calculator history
+interface.
+</div>
+
+<div class="feature">
+<h3>Memory Functions</h3>
+Use supported calculator memory controls to store and reuse numerical values.
+</div>
+
+<div class="feature">
+<h3>Clear Mode Indicators</h3>
+Always see the active DEG or RAD state together with INV and HYP indicators
+when those modes are enabled.
+</div>
+
+<div class="feature">
+<h3>Built-In Mode Guide</h3>
+Access guidance explaining the calculator modes and their available controls.
+</div>
+
+<div class="feature">
+<h3>Error Feedback</h3>
+Receive clear messages for invalid syntax, domain errors, incompatible matrix
+dimensions and numerical overflow.
+</div>
+
+<div class="feature">
+<h3>Responsive Interface</h3>
+The layout is designed to remain usable across a range of supported Android
+screen sizes.
+</div>
+
+<div class="feature">
+<h3>Light & Dark Themes</h3>
+Use the calculator with supported light and dark visual themes.
+</div>
+
+<div class="feature">
+<h3>Offline Calculations</h3>
+Calculator functions do not require an account or an active internet connection.
+An internet connection may be required to load advertisements.
+</div>
+
+<div class="feature">
+<h3>No Account Required</h3>
+Use the calculator without creating an account or signing in.
 </div>
 
 </div>
@@ -203,7 +573,11 @@ No internet connection or account required.
 
 This application uses <strong>Google AdMob</strong> to display advertisements.
 
-For complete information about how data is handled, please read our Privacy Policy.
+Consent options may be presented where required by applicable privacy laws and
+regional regulations.
+
+For complete information about advertising, consent, data handling and user
+choices, please read our Privacy Policy.
 
 </div>
 
@@ -219,7 +593,7 @@ For complete information about how data is handled, please read our Privacy Poli
 
 </div>
 
-</div>
+</main>
 
 <footer>
 
