@@ -15,6 +15,10 @@ content="Scientific Calculator with standard scientific calculations, matrix ope
 
 <title>Scientific Calculator</title>
 
+<link rel="icon" type="image/png" href="assets/app_icon_calculator.png">
+<link rel="apple-touch-icon" href="assets/app_icon_calculator.png">
+
+
 <style>
 
 body{
@@ -168,6 +172,90 @@ footer{
     }
 }
 
+
+.app-brand{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.app-icon{
+    width:128px;
+    height:128px;
+    object-fit:cover;
+    border-radius:28px;
+    margin-bottom:20px;
+    box-shadow:0 12px 30px rgba(0,0,0,.28);
+}
+
+.screenshot-intro{
+    margin-bottom:24px;
+}
+
+.screenshot-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+    align-items:start;
+}
+
+.screenshot-card{
+    margin:0;
+    background:#f8fbff;
+    border:1px solid #dbe7f3;
+    border-radius:14px;
+    padding:12px;
+    box-shadow:0 5px 16px rgba(21,101,192,.08);
+}
+
+.screenshot-card a{
+    display:block;
+    text-decoration:none;
+}
+
+.screenshot-card img{
+    display:block;
+    width:100%;
+    height:auto;
+    border-radius:10px;
+    background:#0d111b;
+}
+
+.screenshot-card figcaption{
+    margin-top:10px;
+    text-align:center;
+    color:#0D47A1;
+    font-weight:bold;
+}
+
+@media(max-width:600px){
+    .app-icon{
+        width:104px;
+        height:104px;
+        border-radius:24px;
+    }
+
+    .screenshot-gallery{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:14px;
+    }
+
+    .screenshot-card{
+        padding:8px;
+    }
+
+    .screenshot-card figcaption{
+        font-size:14px;
+    }
+}
+
+@media(max-width:390px){
+    .screenshot-gallery{
+        grid-template-columns:1fr;
+    }
+}
+
 </style>
 
 </head>
@@ -175,11 +263,18 @@ footer{
 <body>
 
 <header>
-
+<div class="app-brand">
+<img
+    class="app-icon"
+    src="assets/app_icon_calculator.png"
+    alt="Scientific Calculator app icon"
+    width="128"
+    height="128"
+>
 <h1>Scientific Calculator</h1>
 
 <p>Scientific, Matrix, Complex, Calculus, Equation & Graph Calculator</p>
-
+</div>
 </header>
 
 <main class="container">
@@ -202,6 +297,70 @@ calculations, calculus tools, polynomial root solving, simultaneous equation
 solving and graph plotting in a clean and intuitive interface.
 
 </p>
+
+</div>
+
+<div class="card">
+
+<h2>App Screenshots</h2>
+
+<p class="screenshot-intro">
+Explore the main calculator modes and tools available in the app.
+Select any screenshot to view the full-size image.
+</p>
+
+<div class="screenshot-gallery">
+
+<figure class="screenshot-card">
+<a href="assets/mode_selection.jpg" target="_blank" rel="noopener">
+<img src="assets/mode_selection.jpg" alt="Scientific Calculator mode selection screen" loading="lazy">
+</a>
+<figcaption>Calculator Modes</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/graph_mode.jpg" target="_blank" rel="noopener">
+<img src="assets/graph_mode.jpg" alt="Graph Mode plotting the sine function" loading="lazy">
+</a>
+<figcaption>Graph Mode</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/matrix_mode.jpg" target="_blank" rel="noopener">
+<img src="assets/matrix_mode.jpg" alt="Matrix Mode with a three by three matrix editor" loading="lazy">
+</a>
+<figcaption>Matrix Mode</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/calculus_derivative.jpg" target="_blank" rel="noopener">
+<img src="assets/calculus_derivative.jpg" alt="Calculus Mode showing a symbolic derivative result" loading="lazy">
+</a>
+<figcaption>Symbolic Derivative</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/calculus_integral.jpg" target="_blank" rel="noopener">
+<img src="assets/calculus_integral.jpg" alt="Calculus Mode showing a definite integral and numerical result" loading="lazy">
+</a>
+<figcaption>Definite Integral</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/complex_numbers.jpg" target="_blank" rel="noopener">
+<img src="assets/complex_numbers.jpg" alt="Complex Numbers calculator keypad" loading="lazy">
+</a>
+<figcaption>Complex Numbers</figcaption>
+</figure>
+
+<figure class="screenshot-card">
+<a href="assets/statistics_mode.jpg" target="_blank" rel="noopener">
+<img src="assets/statistics_mode.jpg" alt="Statistics screen listing descriptive and inference tools" loading="lazy">
+</a>
+<figcaption>Statistics &amp; Inference</figcaption>
+</figure>
+
+</div>
 
 </div>
 
