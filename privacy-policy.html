@@ -126,7 +126,7 @@
 
 <h1>Privacy Policy</h1>
 
-<p><strong>Effective Date:</strong> July 2026</p>
+<p><strong>Effective Date:</strong> August 2026</p>
 
 <p>
 Scientific Calculator ("the App") respects your privacy.
@@ -165,9 +165,10 @@ content entered into the App.
 </p>
 
 <p>
-The core calculator features can be used without an internet connection.
-However, internet access may be used by Google AdMob and Google's consent-management
-services for advertising and privacy-related functions.
+Most calculator features operate locally and can be used without an internet connection.
+The Currency Converter may use internet access to retrieve reference exchange rates from
+the Frankfurter API. Google AdMob and Google's consent-management services may also use
+internet access for advertising and privacy-related functions.
 </p>
 
 <h2>Information the App Does Not Directly Collect</h2>
@@ -199,14 +200,29 @@ on your device. The graph is not uploaded to a developer-controlled server.
 <h2>Internet Access</h2>
 
 <p>
-The App's mathematical and calculator functions are designed to work locally.
-Internet access is used for Google AdMob advertisements and Google's privacy and
-consent-management services.
+The App's mathematical calculations are designed to be performed locally.
+Internet access is used for Google AdMob advertisements, Google's privacy and
+consent-management services, and to retrieve reference exchange rates for the
+Currency Converter.
 </p>
 
 <p>
-When the device is offline, advertisements and consent services may be unavailable,
-but the core calculator functions remain usable.
+When the Currency Converter requires an exchange rate, the App sends the selected
+base and quote currency codes (for example, USD and INR) to the Frankfurter API
+over HTTPS. The monetary amount entered by the user is not sent to Frankfurter;
+the amount conversion is performed locally on the device.
+</p>
+
+<p>
+Exchange-rate data is cached locally. A cached rate is treated as fresh for 6 hours.
+If a newer rate cannot be retrieved, an older cached rate may remain available for
+offline use until it is replaced or the App's local data is cleared.
+</p>
+
+<p>
+When the device is offline, advertisements, consent services, and retrieval of new
+exchange rates may be unavailable. Other calculator functions remain usable, and the
+Currency Converter may use a previously cached rate when available.
 </p>
 
 <h2>Advertising</h2>
@@ -288,6 +304,7 @@ The App uses the following third-party services:
 <ul>
 <li>Google AdMob</li>
 <li>Google User Messaging Platform</li>
+<li>Frankfurter Exchange Rates API</li>
 </ul>
 
 <p>
@@ -347,6 +364,35 @@ Google's collection, use, sharing, retention, and deletion of advertising-relate
 information are governed by Google's own policies and terms.
 </p>
 
+<p>
+<strong>Frankfurter Exchange Rates API</strong>
+</p>
+
+<p>
+The Currency Converter uses the Frankfurter API to obtain reference exchange rates.
+Only the selected base and quote currency codes are included in the rate request.
+The monetary amount entered by the user is not transmitted to Frankfurter.
+</p>
+
+<p>
+Frankfurter states that its API itself does not collect personal data. Its public API
+is operated behind Cloudflare, which may process basic network information for
+analytics and infrastructure purposes.
+</p>
+
+<p>
+Frankfurter Information and Privacy Statement:
+</p>
+
+<p>
+<a
+    href="https://frankfurter.dev/"
+    target="_blank"
+    rel="noopener noreferrer">
+https://frankfurter.dev/
+</a>
+</p>
+
 <h2>Data Sharing</h2>
 
 <p>
@@ -357,6 +403,19 @@ matrices, equations, polynomial inputs, calculus inputs, or graph settings.
 <p>
 Advertising-related information may be collected or shared by Google through the
 Google Mobile Ads SDK, as described in this Privacy Policy and Google's documentation.
+</p>
+
+<p>
+When you use the Currency Converter, the selected base and quote currency codes are
+transmitted to the Frankfurter API to retrieve the requested reference exchange rate.
+The monetary amount entered by the user is not transmitted and is converted locally
+on the device.
+</p>
+
+<p>
+Like other internet services, Frankfurter's public API infrastructure may receive
+standard network information necessary to process the request, such as an IP address.
+Frankfurter states that its public service operates behind Cloudflare.
 </p>
 
 <p>
@@ -397,6 +456,14 @@ Locally stored information can be removed by:
 </ul>
 
 <p>
+Exchange-rate information used by the Currency Converter may be cached in the App's
+private local storage. Cached information includes currency-pair and exchange-rate
+metadata and does not include the monetary amount entered by the user or a history of
+currency conversions. Cached rate data can be removed by clearing the App's storage
+or uninstalling the App.
+</p>
+
+<p>
 Advertising-related information processed by Google is retained and deleted according
 to Google's policies, applicable laws, device settings, and user privacy choices.
 </p>
@@ -421,6 +488,10 @@ The App is designed to minimize data handling by processing mathematical content
 <p>
 According to Google's Mobile Ads SDK disclosure, advertising-related data handled by
 the Google Mobile Ads SDK is encrypted in transit using Transport Layer Security.
+</p>
+
+<p>
+Requests made by the Currency Converter to the Frankfurter API are transmitted over HTTPS.
 </p>
 
 <p>
