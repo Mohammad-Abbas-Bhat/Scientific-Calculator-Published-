@@ -166,9 +166,10 @@ content entered into the App.
 
 <p>
 Most calculator features operate locally and can be used without an internet connection.
-The Currency Converter may use internet access to retrieve reference exchange rates from
-the Frankfurter API. Google AdMob and Google's consent-management services may also use
-internet access for advertising and privacy-related functions.
+The Currency Converter may use internet access to retrieve official exchange-rate data
+from the National Bank of Ukraine (NBU) Open Data API. Google AdMob and Google's
+consent-management services may also use internet access for advertising and
+privacy-related functions.
 </p>
 
 <h2>Information the App Does Not Directly Collect</h2>
@@ -202,27 +203,28 @@ on your device. The graph is not uploaded to a developer-controlled server.
 <p>
 The App's mathematical calculations are designed to be performed locally.
 Internet access is used for Google AdMob advertisements, Google's privacy and
-consent-management services, and to retrieve reference exchange rates for the
+consent-management services, and to retrieve official exchange-rate data for the
 Currency Converter.
 </p>
 
 <p>
-When the Currency Converter requires an exchange rate, the App sends the selected
-base and quote currency codes (for example, USD and INR) to the Frankfurter API
-over HTTPS. The monetary amount entered by the user is not sent to Frankfurter;
-the amount conversion is performed locally on the device.
+The Currency Converter retrieves exchange-rate data from the National Bank of Ukraine
+(NBU) Open Data API over HTTPS. The monetary amount entered by the user is not included
+in the exchange-rate request and is not sent to the NBU. Currency conversions are
+calculated locally on the device using the retrieved exchange-rate data.
 </p>
 
 <p>
-Exchange-rate data is cached locally. A cached rate is treated as fresh for 6 hours.
-If a newer rate cannot be retrieved, an older cached rate may remain available for
-offline use until it is replaced or the App's local data is cleared.
+Exchange-rate data and related rate metadata may be cached locally. A cached rate is
+treated as fresh for 6 hours. If newer exchange-rate data cannot be retrieved, older
+cached data may remain available for offline use until it is replaced or the App's
+local data is cleared.
 </p>
 
 <p>
 When the device is offline, advertisements, consent services, and retrieval of new
-exchange rates may be unavailable. Other calculator functions remain usable, and the
-Currency Converter may use a previously cached rate when available.
+exchange-rate data may be unavailable. Other calculator functions remain usable, and
+the Currency Converter may use previously cached exchange-rate data when available.
 </p>
 
 <h2>Advertising</h2>
@@ -304,7 +306,7 @@ The App uses the following third-party services:
 <ul>
 <li>Google AdMob</li>
 <li>Google User Messaging Platform</li>
-<li>Frankfurter Exchange Rates API</li>
+<li>National Bank of Ukraine Open Data API</li>
 </ul>
 
 <p>
@@ -365,31 +367,45 @@ information are governed by Google's own policies and terms.
 </p>
 
 <p>
-<strong>Frankfurter Exchange Rates API</strong>
+<strong>National Bank of Ukraine Open Data API</strong>
 </p>
 
 <p>
-The Currency Converter uses the Frankfurter API to obtain reference exchange rates.
-Only the selected base and quote currency codes are included in the rate request.
-The monetary amount entered by the user is not transmitted to Frankfurter.
+The Currency Converter uses official exchange-rate data published by the
+National Bank of Ukraine (NBU) through its Open Data API. The monetary amount entered
+by the user is not included in the exchange-rate request and currency conversions are
+performed locally on the device.
 </p>
 
 <p>
-Frankfurter states that its API itself does not collect personal data. Its public API
-is operated behind Cloudflare, which may process basic network information for
-analytics and infrastructure purposes.
+The NBU publishes its open data for unrestricted and free-of-charge access and permits
+further use, including commercial use, subject to mandatory reference to the source.
+The App identifies the National Bank of Ukraine as the source of the exchange-rate data.
 </p>
 
 <p>
-Frankfurter Information and Privacy Statement:
+National Bank of Ukraine Open Data:
 </p>
 
 <p>
 <a
-    href="https://frankfurter.dev/"
+    href="https://bank.gov.ua/en/open-data"
     target="_blank"
     rel="noopener noreferrer">
-https://frankfurter.dev/
+https://bank.gov.ua/en/open-data
+</a>
+</p>
+
+<p>
+National Bank of Ukraine Developer API:
+</p>
+
+<p>
+<a
+    href="https://bank.gov.ua/en/open-data/api-dev"
+    target="_blank"
+    rel="noopener noreferrer">
+https://bank.gov.ua/en/open-data/api-dev
 </a>
 </p>
 
@@ -406,16 +422,17 @@ Google Mobile Ads SDK, as described in this Privacy Policy and Google's document
 </p>
 
 <p>
-When you use the Currency Converter, the selected base and quote currency codes are
-transmitted to the Frankfurter API to retrieve the requested reference exchange rate.
-The monetary amount entered by the user is not transmitted and is converted locally
-on the device.
+When the Currency Converter retrieves updated exchange-rate data, the App connects to
+the National Bank of Ukraine Open Data API. The monetary amount entered by the user is
+not transmitted to the NBU and the currency conversion itself is performed locally on
+the device.
 </p>
 
 <p>
-Like other internet services, Frankfurter's public API infrastructure may receive
-standard network information necessary to process the request, such as an IP address.
-Frankfurter states that its public service operates behind Cloudflare.
+As with ordinary internet requests, the destination service may receive technical
+connection information necessary to deliver the requested data, such as an IP address.
+The developer does not send calculator expressions, calculation history, or the
+user-entered monetary amount to the NBU.
 </p>
 
 <p>
@@ -457,10 +474,10 @@ Locally stored information can be removed by:
 
 <p>
 Exchange-rate information used by the Currency Converter may be cached in the App's
-private local storage. Cached information includes currency-pair and exchange-rate
-metadata and does not include the monetary amount entered by the user or a history of
-currency conversions. Cached rate data can be removed by clearing the App's storage
-or uninstalling the App.
+private local storage. Cached information may include exchange rates, currency codes,
+rate dates, and related retrieval metadata. It does not include the monetary amount
+entered by the user or a history of currency conversions. Cached exchange-rate data
+can be removed by clearing the App's storage or uninstalling the App.
 </p>
 
 <p>
@@ -491,7 +508,8 @@ the Google Mobile Ads SDK is encrypted in transit using Transport Layer Security
 </p>
 
 <p>
-Requests made by the Currency Converter to the Frankfurter API are transmitted over HTTPS.
+Requests made by the Currency Converter to the National Bank of Ukraine Open Data API
+are transmitted over HTTPS.
 </p>
 
 <p>
